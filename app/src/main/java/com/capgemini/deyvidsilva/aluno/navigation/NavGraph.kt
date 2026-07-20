@@ -4,6 +4,8 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.capgemini.deyvidsilva.aluno.screens.CadastroScreen
+import com.capgemini.deyvidsilva.aluno.ui.screens.ResumoScreen
 import com.capgemini.deyvidsilva.aluno.viewmodel.AlunoViewModel
 
 @Composable
@@ -19,19 +21,19 @@ fun NavGraph(
 
         composable(NavRoutes.CADASTRO) {
 
-//            CadastroScreen(
-//                navController = navController,
-//                viewModel = viewModel
-//            )
+            CadastroScreen(
+                navController = navController,
+                viewModel = viewModel
+            )
 
         }
 
         composable(NavRoutes.RESUMO) {
-//
-//            ResumoScreen(
-//                navController = navController,
-//                viewModel = viewModel
-//            )
+
+            ResumoScreen(
+                navController = navController,
+                viewModel = viewModel
+            )
 
         }
 

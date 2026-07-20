@@ -12,7 +12,7 @@ data class Aluno(
     val situacao: Situacao
         get() = when {
             media >= 7 -> Situacao.APROVADO
-            media >= 5 -> Situacao.REPROVADO
+            media >= 5 -> Situacao.EM_RECUPERACAO
             else -> Situacao.REPROVADO
         }
 }
